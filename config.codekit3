@@ -70,6 +70,14 @@
 		"oAP": "/dev/content/ford.html",
 		"oF": 0
 		},
+	"/dev/content/speedometer.kit": {
+		"cB": 0,
+		"ft": 2048,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/content/speedometer.html",
+		"oF": 0
+		},
 	"/dev/global/head.kit": {
 		"cB": 0,
 		"ft": 2048,
