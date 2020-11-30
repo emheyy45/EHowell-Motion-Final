@@ -11,6 +11,14 @@ const logoTL = gsap.timeline();
 
 //const pointTL = gsap.timeline();
 
+export function logoAnimation(){
+    logoTL.from("#Ford", {content: 1, opacity: 0, y: 50, autoAlpha: 0})
+        .from("#outer-circle", { duration: 1, drawSVG: "50% 50% 50%"})
+        .to("#Ford", {opacity: 0, duration: 3, autoAlpha: 1})
+        .to("#background-black", {duration: 2, scaleY:0, transformOrigin:"0% 50%"})
+
+        return logoTL;
+}
 
 
 export function mainGaugeAnimation(){
@@ -34,17 +42,7 @@ export function mapAnimation(){
         .fromTo("#Stroke-6", {drawSVG: "0%"},{duration:.5, drawSVG: "100%"})
         .fromTo("#Stroke-4", {drawSVG: "0%"},{duration:.5, drawSVG: "100%"})
 
-
+    return mapTL;
 }
 
-export function logoAnimation(){
-    logoTL.from("#Ford", {content: 1, opacity: 0, y: 50, autoAlpha: 0})
-        .from("#outer-circle", { duration: 1, drawSVG: "50% 50% 50%"})
-        .to("#Ford", {opacity: 0, duration: 3, autoAlpha: 1})
-        .to("#background-black", {duration: 2, scaleY:0, transformOrigin:"0% 50%"})
-
-
-
-
-}
 
