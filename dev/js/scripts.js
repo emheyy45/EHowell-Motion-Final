@@ -1,12 +1,16 @@
 import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 
-import {flameRotateAnimation} from "./demo.js"
-import {speedAnimation} from "./demo.js"
+import {mainGaugeAnimation, mapAnimation, logoAnimation} from "MainUIAnim/demo.js" ;
+
+gsap.registerPlugin(GSDevTools);
+
 
 const mainTL = gsap.timeline();
-mainTL.add(flameRotateAnimation());
-mainTL.add(speedAnimation());
+mainTL.add(logoAnimation())
+      .add(mainGaugeAnimation())
+      .add(mapAnimation());
+//mainTL.add(speedPointerAnimation());
 
 
 GSDevTools.create();

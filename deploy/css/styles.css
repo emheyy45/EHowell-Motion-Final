@@ -428,7 +428,7 @@ textarea {
 ============= */
 #flames {
   display: grid;
-  grid-template-columns: auto 50% auto;
+  grid-template-columns: auto 100% auto;
   grid-template-areas: ".   draw   .";
   height: 100vh;
 }

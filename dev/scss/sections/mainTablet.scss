@@ -1,0 +1,20 @@
+/* =============
+    Demo
+============= */
+
+#main{
+    display: grid;
+    grid-template-columns: auto 100% auto;
+    grid-template-areas: ".   draw   .";
+    height: 100vh;
+    
+
+    >div{
+        grid-area: draw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+}

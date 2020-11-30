@@ -54,28 +54,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/content/demo.kit": {
+	"/dev/content/mainTablet.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/dev/content/demo.html",
-		"oF": 0
-		},
-	"/dev/content/ford.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/content/ford.html",
-		"oF": 0
-		},
-	"/dev/content/speedometer.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/content/speedometer.html",
+		"oAP": "/dev/content/mainTablet.html",
 		"oF": 0
 		},
 	"/dev/global/head.kit": {
@@ -102,13 +86,13 @@
 		"oAP": "/deploy/index.html",
 		"oF": 2
 		},
-	"/dev/js/demo.js": {
+	"/dev/js/MainUIAnim/demo.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "/dev/js/demo-min.js",
+		"oAP": "/dev/js/MainUIAnim/demo-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -254,15 +238,28 @@
 		"oS": 0,
 		"sct": 0
 		},
-	"/dev/scss/sections/_demo.scss": {
+	"/dev/scss/sections/logo.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"ec": 1,
 		"ft": 4,
 		"ma": 0,
-		"oA": 1,
-		"oAP": "/dev/scss/sections/_demo.css",
+		"oA": 0,
+		"oAP": "/dev/scss/sections/logo.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/dev/scss/sections/mainTablet.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dev/scss/sections/mainTablet.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
