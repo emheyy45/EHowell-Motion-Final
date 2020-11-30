@@ -40,8 +40,8 @@ export function mapAnimation(){
 export function logoAnimation(){
     logoTL.from("#Ford", {content: 1, opacity: 0, y: 50, autoAlpha: 0})
         .from("#outer-circle", { duration: 1, drawSVG: "50% 50% 50%"})
-        .to("#Ford", {opacity: 0, duration: 3})
-        .to("#background-black", {opacity: 0, duration: 3})
+        .to("#Ford", {opacity: 0, duration: 3, autoAlpha: 1})
+        .to("#background-black", {duration: 2, scaleY:0, transformOrigin:"0% 50%"})
 
 
 
