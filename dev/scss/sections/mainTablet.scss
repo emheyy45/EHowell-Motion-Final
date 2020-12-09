@@ -2,19 +2,21 @@
     Demo
 ============= */
 
-#main{
+#Page-1{
     display: grid;
-    grid-template-columns: auto 100% auto;
-    grid-template-areas: ".   draw   .";
-    height: 100vh;
-    
+    grid-template-columns: auto 50% auto;
+    grid-template-areas: ". spooky .";
 
     >div{
-        grid-area: draw;
+        grid-area: spooky;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100vh;
 
-        
+        svg{
+            width: 100%;
+            background: black;
+        }
     }
 }
