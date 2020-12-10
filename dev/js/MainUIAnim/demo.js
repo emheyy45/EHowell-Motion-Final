@@ -3,6 +3,7 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { EasePack } from "gsap/EasePack";
 import {RoughEase} from "gsap/EasePack";
+import {Bounce} from "gsap";
 //import {Power1} from "gsap";
 
 
@@ -15,12 +16,13 @@ const logoTL = gsap.timeline();
 const flamesTL = gsap.timeline();
 const musicTL = gsap.timeline();
 const musicTextTL = gsap.timeline();
+const pointerTL = gsap.timeline();
 
 //const pointTL = gsap.timeline();
 
 export function logoAnimation(){
     logoTL.from("#Ford",3, {opacity:0, ease:RoughEase.ease.config({points:50, strength:2, clamp:true})})
-        .from("#outer-circle", { duration: 1, drawSVG: "50% 50% 50%"})
+        .from("#outer-circle", { duration: 1, drawSVG: "50% 50%"})
         .to("#Ford", {opacity: 0, duration: 1, autoAlpha: 0})
         .to("#background-black", {duration: 1, scaleY:0, transformOrigin:"0% 50%"})
         .fromTo("#Fill-1", 1, {opacity: 0, y: 50}, {opacity: 1, y: 0})
@@ -68,9 +70,18 @@ export function musicAnimation(){
 
 
 export function musicTextAnimation(){
-    musicTextTL.from("#Group-10",{alpha:0, x:0}, 1.5);
+    musicTextTL.from("#Music",{alpha:0, x:0}, 1.5);
 
     return musicTextTL;
 }
 
+
+export function pointerAnimation(){
+    pointerTL.fromTo ("#pointer-container", {transformOrigin: "50%, 50%", xPercent: 0, yPercent: 0}, {ease: 
+        Bounce.easeOut, rotate: 100})
+        .from("#pointer-container", {transformOrigin: "50%, 50%", xPercent: 0, yPercent: 0}, {ease: 
+            Bounce.easeOut, rotate: -200})
+
+    return pointerTL;
+}
 

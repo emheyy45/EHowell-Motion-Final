@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { GSDevTools } from "gsap/GSDevTools";
 
 
-import {mainGaugeAnimation, logoAnimation, centerFlamesAnimation, musicAnimation, musicTextAnimation } from "MainUIAnim/demo.js" ;
+import {mainGaugeAnimation, logoAnimation, centerFlamesAnimation, musicAnimation, musicTextAnimation, pointerAnimation} from "MainUIAnim/demo.js" ;
 
 
 
@@ -18,7 +18,7 @@ mainTL.add(logoAnimation())
       .add(mainGaugeAnimation(),"-=5")
       .add(musicAnimation(),"-=5")
       .add(musicTextAnimation(),"-=5")
-    //  .add(speedCounter())
+      .add(pointerAnimation(),"-=5")
 //mainTL.add(speedPointerAnimation());
 
 
