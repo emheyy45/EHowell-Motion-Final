@@ -21,6 +21,7 @@ const musicTextTL = gsap.timeline();
 const pointerTL = gsap.timeline();
 const speedoTL = gsap.timeline();
 const triangleTL = gsap.timeline();
+const labelTL = gsap.timeline();
 
 //const pointTL = gsap.timeline();
 
@@ -117,3 +118,9 @@ export function triangleIconAnimation(){
     return triangleTL;
 }
 
+export function labelAnimation(){
+    labelTL.from("#nitro",{opacity: "0% 100%"});
+
+    return labelTL;
+  
+}
