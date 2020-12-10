@@ -99,7 +99,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/js/MainUIAnim/demo-min.js",
 		"oF": 0,
 		"sC": 3,

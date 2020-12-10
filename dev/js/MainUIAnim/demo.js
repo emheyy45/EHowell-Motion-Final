@@ -4,11 +4,13 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { EasePack } from "gsap/EasePack";
 import {RoughEase} from "gsap/EasePack";
 import {Bounce} from "gsap";
+import {MotionPathPlugin} from "gsap/MotionPathPlugin";
+import {Power1} from "gsap";
 //import {Power1} from "gsap";
 
 
 
-gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin, EasePack, RoughEase);
+gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin, EasePack, RoughEase, MotionPathPlugin, Power1);
 
 const mainGaugeTL = gsap.timeline();
 //const mapTL = gsap.timeline();
@@ -18,6 +20,7 @@ const musicTL = gsap.timeline();
 const musicTextTL = gsap.timeline();
 const pointerTL = gsap.timeline();
 const speedoTL = gsap.timeline();
+const triangleTL = gsap.timeline();
 
 //const pointTL = gsap.timeline();
 
@@ -92,5 +95,25 @@ export function speedoAnimation(){
 
     return speedoTL;
 
+}
+
+export function triangleIconAnimation(){
+    //triangleTL.from("#triangle", {motionPath: {path: "#Stroke-6", align: "#Stroke-6", alignOrigin: [0, 0]}, duration: 5, ease:"power1.inOut"})
+
+    triangleTL.to("#triangle", {
+        alpha: 0,
+        duration: 5, 
+        ease: "power1.inOut",
+        immediateRender: true,
+        motionPath: {
+          path: "#Stroke-6",
+          align: "#Stroke-6",
+          alignOrigin: [0.5, 0.5],
+          autoRotate: 90
+        }
+      });
+      
+ 
+    return triangleTL;
 }
 
