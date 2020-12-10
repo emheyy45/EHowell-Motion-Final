@@ -17,6 +17,7 @@ const flamesTL = gsap.timeline();
 const musicTL = gsap.timeline();
 const musicTextTL = gsap.timeline();
 const pointerTL = gsap.timeline();
+const speedoTL = gsap.timeline();
 
 //const pointTL = gsap.timeline();
 
@@ -53,11 +54,11 @@ export function centerFlamesAnimation(){
 
 export function mainGaugeAnimation(){
     mainGaugeTL.from("#WaterDrop", {x:100, alpha: 0, duration: 1})
-        .from("#Short", {x:100, alpha:0, duration: 1})
-        .from("#Short-2", {x:100, alpha:0, duration: 1})
-        .from("#Medium", {x:100, alpha:0, duration: 1})
-        .from("#Long-1", {x:100, alpha:0, duration: 1})
-        .from("#Long-2", {x:100, alpha:0, duration: 1});
+        .from("#Short", {x:100, alpha:0, duration: .5})
+        .from("#Short-2", {x:100, alpha:0, duration: .5})
+        .from("#Medium", {x:100, alpha:0, duration: .5})
+        .from("#Long-1", {x:100, alpha:0, duration: .5})
+        .from("#Long-2", {x:100, alpha:0, duration: .5});
 
     return mainGaugeTL;
 }
@@ -79,9 +80,17 @@ export function musicTextAnimation(){
 export function pointerAnimation(){
     pointerTL.fromTo ("#pointer-container", {transformOrigin: "50%, 50%", xPercent: 0, yPercent: 0}, {ease: 
         Bounce.easeOut, rotate: 100})
-        .from("#pointer-container", {transformOrigin: "50%, 50%", xPercent: 0, yPercent: 0}, {ease: 
+        .from("#pointer-container", {alpha: 0, transformOrigin: "50%, 50%", xPercent: 0, yPercent: 0}, {ease: 
             Bounce.easeOut, rotate: -200})
 
     return pointerTL;
+}
+
+
+export function speedoAnimation(){
+    speedoTL.from("#Speedometer", {alpha: 0, rotate: 100, transformOrigin: "50% 50%"})
+
+    return speedoTL;
+
 }
 
