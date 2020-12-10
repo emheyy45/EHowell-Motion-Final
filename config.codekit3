@@ -54,19 +54,11 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"/dev/content/Dash/flames.kit": {
-		"cB": 0,
-		"ft": 2048,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/dev/content/Dash/flames.html",
-		"oF": 0
-		},
 	"/dev/content/Dash/speedometer.kit": {
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/content/Dash/speedometer.html",
 		"oF": 0
 		},
@@ -82,7 +74,7 @@
 		"cB": 0,
 		"ft": 2048,
 		"hM": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/dev/global/head.html",
 		"oF": 0
 		},
@@ -109,39 +101,6 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/dev/js/MainUIAnim/demo-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/MainUIAnim/flames-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/MainUIAnim/flames-min-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/MainUIAnim/flames.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/MainUIAnim/flames-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/dev/js/MainUIAnim/speed.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/dev/js/MainUIAnim/speed-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

@@ -2,21 +2,22 @@
     Demo
 ============= */
 
-#Page-1{
+#logo-container{
     display: grid;
     grid-template-columns: auto 50% auto;
-    grid-template-areas: ". spooky .";
+    grid-template-areas: ". maintablet .";
 
     >div{
-        grid-area: spooky;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        grid-area: maintablet;
+       
 
         svg{
             width: 100%;
-            background: black;
+            overflow: hidden;
         }
     }
 }

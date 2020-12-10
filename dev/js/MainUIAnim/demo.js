@@ -3,7 +3,8 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 import { EasePack } from "gsap/EasePack";
 import {RoughEase} from "gsap/EasePack";
-import {Linear} from "gsap";
+//import {Power1} from "gsap";
+
 
 
 gsap.registerPlugin(DrawSVGPlugin, MorphSVGPlugin, EasePack, RoughEase);
@@ -12,6 +13,8 @@ const mainGaugeTL = gsap.timeline();
 //const mapTL = gsap.timeline();
 const logoTL = gsap.timeline();
 const flamesTL = gsap.timeline();
+const musicTL = gsap.timeline();
+const musicTextTL = gsap.timeline();
 
 //const pointTL = gsap.timeline();
 
@@ -36,10 +39,8 @@ export function logoAnimation(){
 
 
 export function centerFlamesAnimation(){
-    flamesTL.fromTo("#flames", 3, {drawSVG:"50% 50%"}, {drawSVG:"100% 0%", ease:Linear.easeNone})
-    // shapes fill in
-    .fromTo("#flames", 1, {fill:"none"}, {fill:"green"})
-    .fromTo("#Fill-3", 1, {opacity: 0, y: 50}, {opacity: 1, y: 0});
+    flamesTL.from(".flames", 1, {alpha: 0, transformOrigin: origin, y:-100})
+    
     
             
             
@@ -59,8 +60,17 @@ export function mainGaugeAnimation(){
     return mainGaugeTL;
 }
 
+export function musicAnimation(){
+    musicTL.from("#SkullIcon", {alpha: 0, rotate: 360,transformOrigin: "50% 50%"});
+
+    return musicTL;
+}
 
 
+export function musicTextAnimation(){
+    musicTextTL.from("#Group-10",{alpha:0, x:0}, 1.5);
 
+    return musicTextTL;
+}
 
 
